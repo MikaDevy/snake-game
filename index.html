@@ -158,7 +158,7 @@ var game = {
         };
         var gameControl = {
             processInput: function(keyPressed) {
-                var key = keyPressed.key.toLowerCase();
+                var key = keyPressed.key;
                 var targetDirection = snake.facing;
                 if(key == "w" && snake.facing != "S") targetDirection = "N";
                 if(key == "a" && snake.facing != "E") targetDirection = "W";
