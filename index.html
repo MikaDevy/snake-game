@@ -159,6 +159,10 @@ var game = {
                 if(key == "a" && snake.facing != "E") targetDirection = "W";
                 if(key == "s" && snake.facing != "N") targetDirection = "S";
                 if(key == "d" && snake.facing != "W") targetDirection = "E";
+                if(key == "up_arrow" && snake.facing != "S") targetDirection = "N";
+                if(key == "down_arrow" && snake.facing != "E") targetDirection = "W";
+                if(key == "left_arrow" && snake.facing != "N") targetDirection = "S";
+                if(key == "right_arrow" && snake.facing != "W") targetDirection = "E";
                 snake.facing = targetDirection;
                 game.tick();
             },
